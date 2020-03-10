@@ -15,6 +15,9 @@ import org.junit.Test;
  */
 public class pruebasTest
 {
+    
+    
+    
     /**
      * Default constructor for test class pruebasTest
      */
@@ -48,14 +51,18 @@ public class pruebasTest
      * Called after every test case method.
      */
     @Test
-    public void prueba()
+    public void prueba(int y)
     
     {
     
-      entrada=4;
-      entrada+2=6;
+      x=4;
+      valoresperado=x+2;
+      pruebas.paraProbar(x);
 
 
-      assert.equals(entrada,6);
+      assert.equals(valoresperado);
+      
+      
+      
     }
 }
